@@ -1,2 +1,2 @@
-Ejercicio 1 de freecodecamp 
-Practicando React
+Ejercicio 1 de freecodecamp.
+Practicando React.
