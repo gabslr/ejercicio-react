@@ -1,35 +1,22 @@
-
 import './App.css';
 import Testimonio from './components/Testimonio';
+import datosTestimonio from './components/datosTestimonio'; 
 
 function App() {
   return (
     <div className='App'>
       <div className='contenedor-principal'>
-      <h1>Artistas que revolucionaron al mundo:</h1>
-      <Testimonio
-        nombre='Joel-Peter Witkin'
-        pais='Estados Unidos'
-        imagen='witkin'
-        cargo='Fotógrafo artístico'
-        testimonio='La historia del arte ha sido trazada siempre por creadores originales, por verdaderos autores capaces de crear piezas que trascienden su propio tiempo, son artistas que no les importa tratar de complacer a nadie, comprenden que ese no es el propósito de su creación.'
-      />
-      <Testimonio
-        nombre='Vincent Van-Gogh'
-        pais='Países Bajos'
-        imagen='van-gogh'
-        cargo='Pintor'
-        testimonio='Si nos perfeccionamos en una sola cosa y la comprendemos bien, adquirimos por añadidura la comprensión y el conocimiento de muchas otras cosas.'
-        />
-
-      <Testimonio
-        nombre='Jan Saudek'
-        pais='Checoslovaquia'
-        imagen='saudek'
-        cargo='Fotógrafo'
-        testimonio='No tengo la posibilidad de retratar la vida de otras personas. Retrato la mía propia.........'
-        />
-
+        <h1>Artistas que revolucionaron al mundo:</h1>
+        {datosTestimonio.map((testimonio, datos) => (
+          <Testimonio
+            key={datos} 
+            nombre={testimonio.nombre}
+            pais={testimonio.pais}
+            imagen={testimonio.imagen}
+            cargo={testimonio.cargo}
+            testimonio={testimonio.testimonio}
+          />
+        ))}
       </div>
     </div>
   );
