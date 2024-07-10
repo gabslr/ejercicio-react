@@ -4,7 +4,7 @@ const datosTestimonio = [
       nombre: 'Joel-Peter Witkin',
       pais: 'Estados Unidos',
       imagen: 'witkin',
-      cargo: 'Fotógrafo artístico',
+      cargo: 'Fotógrafo',
       testimonio:
         'La historia del arte ha sido trazada siempre por creadores originales, por verdaderos autores capaces de crear piezas que trascienden su propio tiempo, son artistas que no les importa tratar de complacer a nadie, comprenden que ese no es el propósito de su creación.',
     },
